@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://white_square.png" type="Texture" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+light_mode = 2
+
+[sub_resource type="Gradient" id=3]
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [ -95685.0 ]
+}
+
+[node name="white_square4" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.223529, 0.223529, 0.223529, 1 )
+position = Vector2( 984.066, 386.364 )
+scale = Vector2( 14.2442, 711.283 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="white_square" type="Sprite" parent="."]
+modulate = Color( 0.392157, 0.141176, 0.141176, 1 )
+material = SubResource( 1 )
+position = Vector2( 152.024, 309.677 )
+scale = Vector2( 0.478424, 0.454762 )
+texture = ExtResource( 2 )
+
+[node name="white_square2" type="Sprite" parent="."]
+modulate = Color( 0.0823529, 0.27451, 0.152941, 1 )
+material = SubResource( 2 )
+position = Vector2( 500.105, 310.03 )
+scale = Vector2( 0.47841, 0.47841 )
+texture = ExtResource( 2 )
+
+[node name="white_square3" type="Sprite" parent="."]
+modulate = Color( 0.2, 0.0509804, 0.27451, 1 )
+position = Vector2( 954.009, 318.998 )
+scale = Vector2( 0.460512, 0.460512 )
+texture = ExtResource( 2 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 445.328, 304.397 )
+scale = Vector2( 1.0407, 665.239 )
+texture = SubResource( 4 )
